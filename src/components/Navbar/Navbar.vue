@@ -39,8 +39,6 @@ import {
 } from '@/components/ui/select'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
-import type { IAuthUsuarioResponse } from '@/models/Auth';
-
 interface Props {
     logoUrl: string
 }
