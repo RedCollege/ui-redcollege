@@ -71,7 +71,7 @@ Para documentación detallada y ejemplos, por favor visita nuestro [repositorio 
 
 ## Soporte
 
-Si encuentras algún problema o tienes preguntas, no dudes en abrir un issue en nuestro [repositorio en GitHub](https://github.com/RedCollege/ui-redcollege/issues) o contactarnos en support@redcollege.com.
+Si encuentras algún problema o tienes preguntas, no dudes en abrir un issue en nuestro [repositorio en GitHub](https://github.com/RedCollege/ui-redcollege/issues) o contactarnos en informatica@redcollege.net.
 
 ---
 
