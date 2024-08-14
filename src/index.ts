@@ -5,10 +5,6 @@ export { Login } from './components/Login/index';
 //Models
 export * from './models/Auth';
 
-//Api
-
-//Stores
-
 import { useUserStore } from './lib/stores/userStore';
 
 export default function (pinia) {
