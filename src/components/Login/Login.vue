@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { useUserStore } from "@/lib/stores/userStore";
-import { ofetch } from "ofetch";
-import { useCookies } from '@vueuse/integrations/useCookies'
-import type { IAuthUsuarioResponse } from '@/models/Auth';
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { inject, ref } from 'vue';
-import { useRouter } from 'vue-router'
+import { ref } from 'vue';
 
 interface Props {
     apiUrl: string
@@ -17,12 +10,11 @@ const props = defineProps<Props>()
 const emit = defineEmits(['successLogin'])
 const correo = ref(null)
 const password = ref(null)
-const cookies = useCookies()
 const userStore = useUserStore()
 
 async function login(){
     await userStore.login(props.apiUrl, correo.value ?? "", password.value ?? "")
-    //emit('successLogin', usuario as IAuthUsuarioResponse)
+    emit('successLogin')
 }
 
 
