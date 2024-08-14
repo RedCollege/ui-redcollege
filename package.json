@@ -1,6 +1,6 @@
 {
     "name": "@redcollege/ui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "module",
     "main": "dist/ui-library.umd.js",
     "module": "dist/ui-library.es.js",
