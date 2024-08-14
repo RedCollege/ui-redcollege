@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "lib/*": [
+                "./src/lib/*"
+            ]
+        },
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "declaration": true, // Generate .d.ts files
+        "emitDeclarationOnly": false, // Generate .js and .d.ts files
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
