@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useUserStore } from "@/lib/stores/userStore";
 import { ref } from 'vue';
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 interface Props {
     apiUrl: string
@@ -8,12 +11,12 @@ interface Props {
 
 const props = defineProps<Props>()
 const emit = defineEmits(['successLogin'])
-const correo = ref(null)
-const password = ref(null)
+const correo = ref("")
+const password = ref("")
 const userStore = useUserStore()
 
 async function login(){
-    await userStore.login(props.apiUrl, correo.value ?? "", password.value ?? "")
+    await userStore.login(props.apiUrl, correo.value, password.value)
     emit('successLogin')
 }
 

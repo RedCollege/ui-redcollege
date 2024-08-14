@@ -9,6 +9,6 @@ function login(){
 </script>
 
 <template lang="pug">
-Navbar(logoUrl="", :loggedUser="{}")
+Navbar(logoUrl="", :loggedUser="{}", apiUrl="https://api.redcollege.net/api")
 Login(@login="login", apiUrl="https://api.redcollege.net/api")
 </template>
